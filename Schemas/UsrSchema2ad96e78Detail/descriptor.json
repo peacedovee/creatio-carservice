@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "08956cab-5442-467c-a641-e3dbd89eb9b5",
+    "Name": "UsrSchema2ad96e78Detail",
+    "ModifiedOnUtc": "\/Date(1787926399000)\/",
+    "Parent": {
+      "UId": "01eb38ee-668a-42f0-999d-c2534f979089",
+      "Name": "BaseGridDetailV2"
+    },
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "Схема детали: \"Работы\""
+  }
+}

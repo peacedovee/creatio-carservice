@@ -116,6 +116,13 @@
 = MetaData.Schema.B2.["8bf25ba6-68c0-4236-a43b-4f793ba4a404"].A5 "b966a680-bc92-4fad-b3c4-17f9a852b9eb"
 = MetaData.Schema.B2.["65cd4415-aed9-4262-b711-f1ef421dbfc8"].A4 "6fb74cb1-eaf0-4eca-b9a8-a5868c533ca8"
 = MetaData.Schema.B2.["65cd4415-aed9-4262-b711-f1ef421dbfc8"].A5 "b966a680-bc92-4fad-b3c4-17f9a852b9eb"
++ MetaData.Schema.B2 {
+  "UId": "d8999331-bf49-493e-9f35-54cbdfd0edbd",
+  "A2": "UsrRepairWorkDetailDetailCaptionOnPage",
+  "A3": "6fb74cb1-eaf0-4eca-b9a8-a5868c533ca8",
+  "A4": "6fb74cb1-eaf0-4eca-b9a8-a5868c533ca8",
+  "A5": "b966a680-bc92-4fad-b3c4-17f9a852b9eb"
+}
 - MetaData.Schema.B2.["83a8f721-37d0-41c2-9c12-ab2690282bc2"]
 - MetaData.Schema.B2.["47ef9d11-7612-4764-845e-cea47a849561"]
 ~ MetaData.Schema.B2 [
@@ -173,7 +180,8 @@
   "a56065eb-fe78-4db6-9957-9c7e262e2046",
   "12698ff6-c79e-43a3-8a1e-c4e57feb214c",
   "8bf25ba6-68c0-4236-a43b-4f793ba4a404",
-  "65cd4415-aed9-4262-b711-f1ef421dbfc8"
+  "65cd4415-aed9-4262-b711-f1ef421dbfc8",
+  "d8999331-bf49-493e-9f35-54cbdfd0edbd"
 ]
 = MetaData.Schema.B6 "df232c9e-43ef-0076-215c-07e088b0945b"
 = MetaData.Schema.B8 "8.3.2.4199"

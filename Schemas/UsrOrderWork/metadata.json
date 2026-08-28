@@ -86,8 +86,8 @@
   "S2": "b295071f-7ea9-4e62-8d1a-919bf3732ff2",
   "S4": "b655c703-d20d-4ff9-9f7f-6558462bd418",
   "E6": true,
-  "E20": true,
-  "E17": "UsrOrderIdId"
+  "E17": "UsrOrderIdId",
+  "E18": "UsrOrderIdUsrNumber"
 }
 ~ MetaData.Schema.D2 [
   "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",

@@ -40,6 +40,14 @@ define("UsrOrder1Page", [], function() {
 					"masterColumn": "Id",
 					"detailColumn": "UsrOrder"
 				}
+			},
+			"UsrRepairWorkDetail": {
+				"schemaName": "UsrSchema2ad96e78Detail",
+				"entitySchemaName": "UsrOrderWork",
+				"filter": {
+					"detailColumn": "UsrOrderId",
+					"masterColumn": "Id"
+				}
 			}
 		}/**SCHEMA_DETAILS*/,
 		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/,
@@ -66,23 +74,6 @@ define("UsrOrder1Page", [], function() {
 			},
 			{
 				"operation": "insert",
-				"name": "UsrAcceptanceDate6929d3b5-73ba-4ecc-9f91-0078701ad250",
-				"values": {
-					"layout": {
-						"colSpan": 24,
-						"rowSpan": 1,
-						"column": 0,
-						"row": 2,
-						"layoutName": "ProfileContainer"
-					},
-					"bindTo": "UsrAcceptanceDate"
-				},
-				"parentName": "ProfileContainer",
-				"propertyName": "items",
-				"index": 1
-			},
-			{
-				"operation": "insert",
 				"name": "UsrName0992eb94-e401-4de9-b7cb-ee616af2650a",
 				"values": {
 					"layout": {
@@ -93,6 +84,23 @@ define("UsrOrder1Page", [], function() {
 						"layoutName": "ProfileContainer"
 					},
 					"bindTo": "UsrName"
+				},
+				"parentName": "ProfileContainer",
+				"propertyName": "items",
+				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "UsrAcceptanceDate6929d3b5-73ba-4ecc-9f91-0078701ad250",
+				"values": {
+					"layout": {
+						"colSpan": 24,
+						"rowSpan": 1,
+						"column": 0,
+						"row": 2,
+						"layoutName": "ProfileContainer"
+					},
+					"bindTo": "UsrAcceptanceDate"
 				},
 				"parentName": "ProfileContainer",
 				"propertyName": "items",
@@ -283,6 +291,17 @@ define("UsrOrder1Page", [], function() {
 				"parentName": "Tabs",
 				"propertyName": "tabs",
 				"index": 1
+			},
+			{
+				"operation": "insert",
+				"name": "UsrRepairWorkDetail",
+				"values": {
+					"itemType": 2,
+					"markerValue": "added-detail"
+				},
+				"parentName": "TabRepairWorks",
+				"propertyName": "items",
+				"index": 0
 			},
 			{
 				"operation": "remove",
