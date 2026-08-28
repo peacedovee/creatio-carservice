@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Заказ-наряды" />
+			<Item Name="Columns.UsrAcceptanceDate.Caption" Value="Дата приемки" />
+			<Item Name="Columns.UsrActive.Caption" Value="Активен" />
+			<Item Name="Columns.UsrBrand.Caption" Value="Марка" />
+			<Item Name="Columns.UsrClientId.Caption" Value="Клиент" />
+			<Item Name="Columns.UsrComment.Caption" Value="Комментарий" />
+			<Item Name="Columns.UsrModel.Caption" Value="Модель" />
+			<Item Name="Columns.UsrName.Caption" Value="Название" />
+			<Item Name="Columns.UsrNumber.Caption" Value="Номер" />
+			<Item Name="Columns.UsrOwnerId.Caption" Value="Ответственный" />
+			<Item Name="Columns.UsrPlateNumber.Caption" Value="Гос. номер" />
+			<Item Name="Columns.UsrStatusId.Caption" Value="Статус" />
+			<Item Name="Columns.UsrVIN.Caption" Value="VIN" />
+			<Item Name="Columns.UsrYear.Caption" Value="Год" />
+		</Items>
+	</Group>
+</Resources>

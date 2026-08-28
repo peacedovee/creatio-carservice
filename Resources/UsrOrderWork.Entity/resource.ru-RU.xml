@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Ремонтные работы" />
+			<Item Name="Columns.UsrHours.Caption" Value="Нормо-часы" />
+			<Item Name="Columns.UsrName.Caption" Value="Имя" />
+			<Item Name="Columns.UsrNumber.Caption" Value="Номер" />
+			<Item Name="Columns.UsrOrderId.Caption" Value="Заказ-наряд" />
+			<Item Name="Columns.UsrWorkTypeId.Caption" Value="Тип работы" />
+			<Item Name="EventsProcessSchema.Caption" Value="Бизнес-процесс" />
+		</Items>
+	</Group>
+</Resources>

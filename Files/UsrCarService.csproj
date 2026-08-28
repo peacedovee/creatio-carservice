@@ -1103,7 +1103,12 @@
 		</Reference>
 	</ItemGroup>
 	<ItemGroup Label="Standalone package external assembly references" />
-	<ItemGroup Label="Entity Files" />
+	<ItemGroup Label="Entity Files">
+		<Compile Remove="$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrder/UsrOrder.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrder/UsrOrder.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderStatus/UsrOrderStatus.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderStatus/UsrOrderStatus.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderWork/UsrOrderWork.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderWork/UsrOrderWork.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrWorkType/UsrWorkType.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrWorkType/UsrWorkType.cs')" />
+	</ItemGroup>
 	<ItemGroup Label="3rd Party References"></ItemGroup>
 	<Target Name="Paths" BeforeTargets="BeforeCompile">
 		<Message Importance="High" Text="*********** Project [$(MSBuildProjectFile)] TargetFramework [$(TargetFramework)] CoreTargetFramework [$(CoreTargetFramework)]" />

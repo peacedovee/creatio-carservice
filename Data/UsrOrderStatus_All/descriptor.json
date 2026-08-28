@@ -1,0 +1,63 @@
+﻿{
+  "Descriptor": {
+    "UId": "cdcb9ad2-537a-a990-661c-efe926b680a6",
+    "Name": "UsrOrderStatus_All",
+    "ModifiedOnUtc": "\/Date(1787923068000)\/",
+    "InstallType": 0,
+    "Schema": {
+      "UId": "9c62ce92-d07c-4900-bfe3-5b514e567baa",
+      "Name": "UsrOrderStatus"
+    },
+    "Columns": [
+      {
+        "ColumnUId": "3015559e-cbc6-406a-88af-07f7930be832",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ModifiedBy",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      },
+      {
+        "ColumnUId": "736c30a7-c0ec-4fa9-b034-2552b319b633",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Name",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "9928edec-4272-425a-93bb-48743fee4b04",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "ModifiedOn",
+        "DataTypeValueUId": "d21e9ef4-c064-4012-b286-fa1a8171da44"
+      },
+      {
+        "ColumnUId": "9e53fd7c-dde4-4502-a64c-b9e34148108b",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "Description",
+        "DataTypeValueUId": "ddb3a1ee-07e8-4d62-b7a9-d0e618b00fbd"
+      },
+      {
+        "ColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+        "IsForceUpdate": false,
+        "IsKey": true,
+        "ColumnName": "Id",
+        "DataTypeValueUId": "23018567-a13c-4320-8687-fd6f9e3699bd"
+      },
+      {
+        "ColumnUId": "e80190a5-03b2-4095-90f7-a193a960adee",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "CreatedOn",
+        "DataTypeValueUId": "d21e9ef4-c064-4012-b286-fa1a8171da44"
+      },
+      {
+        "ColumnUId": "ebf6bb93-8aa6-4a01-900d-c6ea67affe21",
+        "IsForceUpdate": false,
+        "IsKey": false,
+        "ColumnName": "CreatedBy",
+        "DataTypeValueUId": "b295071f-7ea9-4e62-8d1a-919bf3732ff2"
+      }
+    ]
+  }
+}
