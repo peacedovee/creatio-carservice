@@ -1,0 +1,17 @@
+﻿{
+  "Descriptor": {
+    "UId": "df232c9e-43ef-0076-215c-07e088b0945b",
+    "Name": "UsrCarService",
+    "Type": 1,
+    "ModifiedOnUtc": "\/Date(1787920689000)\/",
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/UsrCarService.csproj",
+    "DependsOn": [
+      {
+        "UId": "3f299622-2079-4a62-ba18-6d32c1d0d6af",
+        "PackageVersion": "7.8.0",
+        "Name": "SalesEnterprise_Marketing_ServiceEnt"
+      }
+    ]
+  }
+}

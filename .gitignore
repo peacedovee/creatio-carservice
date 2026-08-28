@@ -1,0 +1,69 @@
+# ============================
+# Creatio / .NET / Windows
+# ============================
+
+# Build folders
+bin/
+obj/
+temp/
+packages/
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+
+# IDE folders
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Windows junk
+Thumbs.db
+Desktop.ini
+
+# Creatio cache
+*.cache
+*.localstorage
+
+# Rider / ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# VS Code workspace
+*.code-workspace
+
+# Node (если используешь)
+node_modules/
+
+# Python virtual env
+venv/
+
+# ============================
+# Creatio-specific
+# ============================
+
+# Compiled schemas (генерируются Creatio)
+*.compiled
+
+# Temporary schema files
+*.csproj.user
+
+# BPMN runtime artifacts
+*.bpmn.diagram
+
+# WebApp runtime cache
+Terrasoft.WebApp/Resources/*_temp/
+
+# ============================
+# НЕ игнорировать
+# ============================
+# Schemas/
+# Resources/
+# Data/
+# Files/
+# BPMN definitions
+# Configuration schemas
