@@ -1,0 +1,26 @@
+﻿{
+  "PackageData": [
+    {
+      "Row": [
+        {
+          "SchemaColumnUId": "ae0e45ca-c495-4fe7-a39d-3ab7278e1617",
+          "Value": "cab996ec-28a7-45a7-b311-9321a0c28fce"
+        },
+        {
+          "SchemaColumnUId": "0e3d3857-2203-40e4-b1ec-8e972007650e",
+          "Value": "f4cd2a9b-1312-4d26-9205-c09e8ba56218",
+          "DisplayValue": "Сервис"
+        },
+        {
+          "SchemaColumnUId": "991cf5ef-ffb8-49a5-add3-074a595f6c43",
+          "Value": "aae1958d-530c-4d86-8ac7-438e329940cb",
+          "DisplayValue": "Заказ-наряды"
+        },
+        {
+          "SchemaColumnUId": "bd12ea8e-2bc2-42bf-925a-3ab766cc0b9f",
+          "Value": 0
+        }
+      ]
+    }
+  ]
+}

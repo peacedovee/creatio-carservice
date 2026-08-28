@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "34526479-8587-4e8d-b603-18711e89f2ad",
+    "Name": "UsrOrderFile",
+    "ModifiedOnUtc": "\/Date(1787923993000)\/",
+    "Parent": {
+      "UId": "556c5867-60a7-4456-aae1-a57a122bef70",
+      "Name": "File"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Файл и ссылка объекта Заказ-наряды",
+    "DependsOn": []
+  }
+}

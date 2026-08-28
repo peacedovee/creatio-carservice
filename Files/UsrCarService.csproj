@@ -1105,7 +1105,12 @@
 	<ItemGroup Label="Standalone package external assembly references" />
 	<ItemGroup Label="Entity Files">
 		<Compile Remove="$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrder/UsrOrder.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrder/UsrOrder.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderFile/UsrOrderFile.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderFile/UsrOrderFile.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderFolder/UsrOrderFolder.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderFolder/UsrOrderFolder.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderInFolder/UsrOrderInFolder.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderInFolder/UsrOrderInFolder.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderInTag/UsrOrderInTag.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderInTag/UsrOrderInTag.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderStatus/UsrOrderStatus.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderStatus/UsrOrderStatus.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderTag/UsrOrderTag.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderTag/UsrOrderTag.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderWork/UsrOrderWork.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrOrderWork/UsrOrderWork.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrWorkType/UsrWorkType.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrCarService/Schemas/UsrWorkType/UsrWorkType.cs')" />
 	</ItemGroup>

@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "c79c04e9-90b9-46b4-8785-84f736806b11",
+    "Name": "UsrOrderInFolder",
+    "ModifiedOnUtc": "\/Date(1787923998000)\/",
+    "Parent": {
+      "UId": "4f63bafb-e9e7-4082-b92e-66b97c14017c",
+      "Name": "BaseItemInFolder"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Заказ-наряды в группе",
+    "DependsOn": []
+  }
+}

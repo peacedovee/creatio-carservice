@@ -10,6 +10,7 @@
 			<Item Name="Columns.UsrComment.Caption" Value="Comment" />
 			<Item Name="Columns.UsrModel.Caption" Value="Model" />
 			<Item Name="Columns.UsrName.Caption" Value="Name" />
+			<Item Name="Columns.UsrNotes.Caption" Value="Заметки" />
 			<Item Name="Columns.UsrNumber.Caption" Value="Number" />
 			<Item Name="Columns.UsrOwnerId.Caption" Value="Owner" />
 			<Item Name="Columns.UsrPlateNumber.Caption" Value="License plate" />

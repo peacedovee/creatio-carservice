@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "2f4c2bf8-9f66-4971-83ed-d34389b2353b",
+    "Name": "UsrOrderInTag",
+    "ModifiedOnUtc": "\/Date(1787924000000)\/",
+    "Parent": {
+      "UId": "5894a2b0-51d5-419a-82bb-238674634270",
+      "Name": "BaseEntityInTag"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Тег в записи раздела Заказ-наряды",
+    "DependsOn": []
+  }
+}

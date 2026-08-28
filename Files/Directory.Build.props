@@ -1,7 +1,12 @@
 <Project>
 	<ItemGroup Label="Entity Files" Condition="'$(PkgPath)' != ''">
 		<Compile Include="$(PkgPath)/UsrCarService/Schemas/UsrOrder/UsrOrder.cs" Condition="Exists('$(PkgPath)/UsrCarService/Schemas/UsrOrder/UsrOrder.cs')" />
+		<Compile Include="$(PkgPath)/UsrCarService/Schemas/UsrOrderFile/UsrOrderFile.cs" Condition="Exists('$(PkgPath)/UsrCarService/Schemas/UsrOrderFile/UsrOrderFile.cs')" />
+		<Compile Include="$(PkgPath)/UsrCarService/Schemas/UsrOrderFolder/UsrOrderFolder.cs" Condition="Exists('$(PkgPath)/UsrCarService/Schemas/UsrOrderFolder/UsrOrderFolder.cs')" />
+		<Compile Include="$(PkgPath)/UsrCarService/Schemas/UsrOrderInFolder/UsrOrderInFolder.cs" Condition="Exists('$(PkgPath)/UsrCarService/Schemas/UsrOrderInFolder/UsrOrderInFolder.cs')" />
+		<Compile Include="$(PkgPath)/UsrCarService/Schemas/UsrOrderInTag/UsrOrderInTag.cs" Condition="Exists('$(PkgPath)/UsrCarService/Schemas/UsrOrderInTag/UsrOrderInTag.cs')" />
 		<Compile Include="$(PkgPath)/UsrCarService/Schemas/UsrOrderStatus/UsrOrderStatus.cs" Condition="Exists('$(PkgPath)/UsrCarService/Schemas/UsrOrderStatus/UsrOrderStatus.cs')" />
+		<Compile Include="$(PkgPath)/UsrCarService/Schemas/UsrOrderTag/UsrOrderTag.cs" Condition="Exists('$(PkgPath)/UsrCarService/Schemas/UsrOrderTag/UsrOrderTag.cs')" />
 		<Compile Include="$(PkgPath)/UsrCarService/Schemas/UsrOrderWork/UsrOrderWork.cs" Condition="Exists('$(PkgPath)/UsrCarService/Schemas/UsrOrderWork/UsrOrderWork.cs')" />
 		<Compile Include="$(PkgPath)/UsrCarService/Schemas/UsrWorkType/UsrWorkType.cs" Condition="Exists('$(PkgPath)/UsrCarService/Schemas/UsrWorkType/UsrWorkType.cs')" />
 	</ItemGroup>
