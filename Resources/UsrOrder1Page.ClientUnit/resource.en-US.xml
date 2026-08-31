@@ -3,7 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Страница редактирования: &quot;Заказ-наряды&quot;" />
-			<Item Name="LocalizableStrings.TabRepairWorksTabCaption.Value" Value="Работы" />
+			<Item Name="LocalizableStrings.TabRepairWorksTabCaption.Value" Value="Work" />
 			<Item Name="LocalizableStrings.UsrRepairWorkDetailDetailCaptionOnPage.Value" Value="Repair work" />
 		</Items>
 	</Group>

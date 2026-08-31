@@ -4,6 +4,7 @@
 		<Items>
 			<Item Name="Caption" Value="Repair work" />
 			<Item Name="LocalizableStrings.Caption.Value" Value="Repair work" />
+			<Item Name="LocalizableStrings.HoursValidationMessage.Value" Value="No more than {0} labor hours are allowed in the order." />
 		</Items>
 	</Group>
 </Resources>

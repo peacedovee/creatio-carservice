@@ -2,8 +2,7 @@
 <Resources Culture="ru-RU">
 	<Group Type="String">
 		<Items>
-			<Item Name="Caption" Value="Ремонтные работы" />
-			<Item Name="LocalizableStrings.Caption.Value" Value="Ремонтные работы" />
+			<Item Name="Caption" Value="Слушатель событий для UsrOrderWork" />
 			<Item Name="LocalizableStrings.HoursValidationMessage.Value" Value="В заказ-наряде допускается не более {0} нормо-часов суммарной длительности работ." />
 		</Items>
 	</Group>

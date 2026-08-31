@@ -1,0 +1,24 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "SourceCodeSchemaManager",
+      "UId": "aa2daf34-89f8-43f8-942f-4dac9b9a800a",
+      "A2": "UsrOrderWorkEventListener",
+      "A5": "b966a680-bc92-4fad-b3c4-17f9a852b9eb",
+      "B1": [],
+      "B2": [
+        {
+          "UId": "0681610a-530f-3c9e-f622-f117436ea774",
+          "A2": "HoursValidationMessage",
+          "A3": "aa2daf34-89f8-43f8-942f-4dac9b9a800a",
+          "A4": "aa2daf34-89f8-43f8-942f-4dac9b9a800a",
+          "A5": "b966a680-bc92-4fad-b3c4-17f9a852b9eb"
+        }
+      ],
+      "B3": [],
+      "B6": "df232c9e-43ef-0076-215c-07e088b0945b",
+      "B8": "8.3.2.4199",
+      "HD1": "50e3acc0-26fc-4237-a095-849a1d534bd3"
+    }
+  }
+}
