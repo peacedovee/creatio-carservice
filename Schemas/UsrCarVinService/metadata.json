@@ -1,0 +1,59 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "SourceCodeSchemaManager",
+      "UId": "c79d25e1-d0c3-4a75-abd0-0f8e0a1313f9",
+      "A2": "UsrCarVINService",
+      "A5": "b966a680-bc92-4fad-b3c4-17f9a852b9eb",
+      "B1": [],
+      "B2": [
+        {
+          "UId": "242957d2-7ebb-40e0-efba-f409f5f5bd29",
+          "A2": "ErrorService",
+          "A3": "c79d25e1-d0c3-4a75-abd0-0f8e0a1313f9",
+          "A4": "c79d25e1-d0c3-4a75-abd0-0f8e0a1313f9",
+          "A5": "b966a680-bc92-4fad-b3c4-17f9a852b9eb"
+        },
+        {
+          "UId": "45a384ba-78a9-14cd-4144-23db41ac0385",
+          "A2": "SuccessfullyData",
+          "A3": "c79d25e1-d0c3-4a75-abd0-0f8e0a1313f9",
+          "A4": "c79d25e1-d0c3-4a75-abd0-0f8e0a1313f9",
+          "A5": "b966a680-bc92-4fad-b3c4-17f9a852b9eb"
+        },
+        {
+          "UId": "4ffda44c-1d8a-47ab-13bf-468507e04614",
+          "A2": "VINNotRecognized",
+          "A3": "c79d25e1-d0c3-4a75-abd0-0f8e0a1313f9",
+          "A4": "c79d25e1-d0c3-4a75-abd0-0f8e0a1313f9",
+          "A5": "b966a680-bc92-4fad-b3c4-17f9a852b9eb"
+        },
+        {
+          "UId": "76cff32b-cd9f-b5d1-e8fc-2c60371ae08c",
+          "A2": "UnavailableService",
+          "A3": "c79d25e1-d0c3-4a75-abd0-0f8e0a1313f9",
+          "A4": "c79d25e1-d0c3-4a75-abd0-0f8e0a1313f9",
+          "A5": "b966a680-bc92-4fad-b3c4-17f9a852b9eb"
+        },
+        {
+          "UId": "9995049c-ebd4-fe52-b03e-01c0753b6c02",
+          "A2": "VINNotFilled",
+          "A3": "c79d25e1-d0c3-4a75-abd0-0f8e0a1313f9",
+          "A4": "c79d25e1-d0c3-4a75-abd0-0f8e0a1313f9",
+          "A5": "b966a680-bc92-4fad-b3c4-17f9a852b9eb"
+        },
+        {
+          "UId": "17a96af8-2d9b-3fe2-3e62-21f7a1353c13",
+          "A2": "OrderNotFound",
+          "A3": "c79d25e1-d0c3-4a75-abd0-0f8e0a1313f9",
+          "A4": "c79d25e1-d0c3-4a75-abd0-0f8e0a1313f9",
+          "A5": "b966a680-bc92-4fad-b3c4-17f9a852b9eb"
+        }
+      ],
+      "B3": [],
+      "B6": "df232c9e-43ef-0076-215c-07e088b0945b",
+      "B8": "8.3.2.4199",
+      "HD1": "50e3acc0-26fc-4237-a095-849a1d534bd3"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-define("UsrOrder1Page", [], function() {
+define("UsrOrder1Page", ["ProcessModuleUtilities"], function(ProcessModuleUtilities) {
 	return {
 		entitySchemaName: "UsrOrder",
 		attributes: {
@@ -51,7 +51,77 @@ define("UsrOrder1Page", [], function() {
 			}
 		}/**SCHEMA_DETAILS*/,
 		businessRules: /**SCHEMA_BUSINESS_RULES*/{}/**SCHEMA_BUSINESS_RULES*/,
-		methods: {},
+		methods: {
+			init: function() {
+			    this.callParent(arguments);
+			    Terrasoft.ServerChannel.on(Terrasoft.EventName.ON_MESSAGE, this.onServerMessage, this);
+			},
+			onServerMessage: function(scope, message) {
+			    if (!message || message.Header.Sender !== "VinProcessResult") {
+			        return;
+			    }
+			
+			    var code = message.Body;
+				var localized = this.get("Resources.Strings." + code);
+			
+			    if (localized) {
+			
+			        // Успех
+			        if (code === "VinUpdated") {
+			            Terrasoft.showInformation(localized);
+			            this.reloadEntity();
+			        } else {
+			            Terrasoft.showErrorMessage(localized);
+			        }
+			
+			    } else {
+			        Terrasoft.showErrorMessage(code);
+			    }
+			},
+			onFillByVinClick: function() {
+			    var orderId = this.get("Id");
+			
+			    // Если запись не сохранена
+			    if (!orderId) {
+			        this.save({
+			            callback: function(response) {
+			
+			                if (!response.success) {
+			                    var errors = response.validationInfo && response.validationInfo.validationInfo;
+			                    if (errors && errors.length > 0) {
+			                        Terrasoft.showErrorMessage(errors[0].message);
+			                    } else {
+			                        Terrasoft.showErrorMessage(response.message || this.get("Resources.Strings.SaveError"));
+			                    }
+			                    return;
+			                }
+			
+			                var newId = this.get("Id");
+			
+			                ProcessModuleUtilities.executeProcess({
+			                    sysProcessName: "UsrFillOrderByVINProcess",
+			                    parameters: {
+			                        ProcessSchemaParameterOrderID: newId
+			                    },
+			                    scope: this
+			                });
+			            },
+			            scope: this
+			        });
+			
+			        return;
+			    }
+			
+			    // Если запись уже сохранена
+			    ProcessModuleUtilities.executeProcess({
+			        sysProcessName: "UsrFillOrderByVINProcess",
+			        parameters: {
+			            ProcessSchemaParameterOrderID: orderId
+			        },
+			        scope: this
+			    });
+			}
+		},
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
 			{
@@ -162,7 +232,7 @@ define("UsrOrder1Page", [], function() {
 				"name": "UsrClientIda03187ad-8f07-49c9-80e2-5abf35be06fa",
 				"values": {
 					"layout": {
-						"colSpan": 8,
+						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 0,
 						"row": 0,
@@ -179,10 +249,10 @@ define("UsrOrder1Page", [], function() {
 				"name": "UsrPlateNumber52ab44e2-b8c3-4fa7-8c23-4e1da171566b",
 				"values": {
 					"layout": {
-						"colSpan": 8,
+						"colSpan": 12,
 						"rowSpan": 1,
-						"column": 8,
-						"row": 0,
+						"column": 0,
+						"row": 1,
 						"layoutName": "Header"
 					},
 					"bindTo": "UsrPlateNumber"
@@ -196,10 +266,10 @@ define("UsrOrder1Page", [], function() {
 				"name": "UsrVIN1267a299-bdae-4002-963c-b177b2bc7016",
 				"values": {
 					"layout": {
-						"colSpan": 8,
+						"colSpan": 12,
 						"rowSpan": 1,
-						"column": 16,
-						"row": 0,
+						"column": 0,
+						"row": 2,
 						"layoutName": "Header"
 					},
 					"bindTo": "UsrVIN"
@@ -213,13 +283,14 @@ define("UsrOrder1Page", [], function() {
 				"name": "UsrBrand147b1b7e-11bd-477d-ae8e-dc783a9017ad",
 				"values": {
 					"layout": {
-						"colSpan": 8,
+						"colSpan": 12,
 						"rowSpan": 1,
-						"column": 0,
-						"row": 1,
+						"column": 12,
+						"row": 0,
 						"layoutName": "Header"
 					},
-					"bindTo": "UsrBrand"
+					"bindTo": "UsrBrand",
+					"enabled": true
 				},
 				"parentName": "Header",
 				"propertyName": "items",
@@ -230,13 +301,14 @@ define("UsrOrder1Page", [], function() {
 				"name": "UsrModela114348c-6a6e-425d-8b51-c1fe06f8b13b",
 				"values": {
 					"layout": {
-						"colSpan": 8,
+						"colSpan": 12,
 						"rowSpan": 1,
-						"column": 8,
+						"column": 12,
 						"row": 1,
 						"layoutName": "Header"
 					},
-					"bindTo": "UsrModel"
+					"bindTo": "UsrModel",
+					"enabled": true
 				},
 				"parentName": "Header",
 				"propertyName": "items",
@@ -247,10 +319,10 @@ define("UsrOrder1Page", [], function() {
 				"name": "UsrYear7b5cb4f2-954b-4379-be20-ee443d378474",
 				"values": {
 					"layout": {
-						"colSpan": 8,
+						"colSpan": 12,
 						"rowSpan": 1,
-						"column": 16,
-						"row": 1,
+						"column": 12,
+						"row": 2,
 						"layoutName": "Header"
 					},
 					"bindTo": "UsrYear"
@@ -261,13 +333,37 @@ define("UsrOrder1Page", [], function() {
 			},
 			{
 				"operation": "insert",
+				"name": "FillByVinButton",
+				"values": {
+					"itemType": 5,
+					"caption": {
+						"bindTo": "Resources.Strings.FillByVinButtonCaption"
+					},
+					"click": {
+						"bindTo": "onFillByVinClick"
+					},
+					"style": "blue",
+					"layout": {
+						"colSpan": 12,
+						"rowSpan": 1,
+						"column": 12,
+						"row": 3,
+						"layoutName": "Header"
+					}
+				},
+				"parentName": "Header",
+				"propertyName": "items",
+				"index": 6
+			},
+			{
+				"operation": "insert",
 				"name": "UsrCommentb417904c-7aad-4074-a8ab-f345fac0f556",
 				"values": {
 					"layout": {
-						"colSpan": 24,
+						"colSpan": 12,
 						"rowSpan": 1,
 						"column": 0,
-						"row": 2,
+						"row": 3,
 						"layoutName": "Header"
 					},
 					"bindTo": "UsrComment",
@@ -276,7 +372,7 @@ define("UsrOrder1Page", [], function() {
 				},
 				"parentName": "Header",
 				"propertyName": "items",
-				"index": 6
+				"index": 7
 			},
 			{
 				"operation": "insert",

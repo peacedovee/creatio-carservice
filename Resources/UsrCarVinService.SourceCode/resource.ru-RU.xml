@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="UsrCarVINService" />
+			<Item Name="LocalizableStrings.ErrorService.Value" Value="Ошибка при выполнении сервиса." />
+			<Item Name="LocalizableStrings.OrderNotFound.Value" Value="Сохраните заказ-наряд." />
+			<Item Name="LocalizableStrings.SuccessfullyData.Value" Value="Данные по VIN успешно обновлены." />
+			<Item Name="LocalizableStrings.UnavailableService.Value" Value="Внешний сервис недоступен." />
+			<Item Name="LocalizableStrings.VINNotFilled.Value" Value="VIN не заполнен." />
+			<Item Name="LocalizableStrings.VINNotRecognized.Value" Value="VIN не распознан." />
+		</Items>
+	</Group>
+</Resources>

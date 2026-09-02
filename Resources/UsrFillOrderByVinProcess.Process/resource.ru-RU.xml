@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Caption" Value="получить VIN по ID" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.AggregationColumnName.Caption" Value="Имя колонки для агрегирующей функции" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.CanReadUncommitedData.Caption" Value="Выполнять &quot;грязное чтение&quot;" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.CanReadUncommitedData.DisplayValue" Value="true" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ConsiderTimeInFilter.Caption" Value="Учитывать время в фильтре" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ConsiderTimeInFilter.DisplayValue" Value="true" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.DataSourceFilters.Caption" Value="Источник данных фильтров" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.EntityColumnMetaPathes.Caption" Value="Перечень колонок для чтения" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.EntityColumnMetaPathes.DisplayValue" Value="ae0e45ca-c495-4fe7-a39d-3ab7278e1617;1e2d32ae-66a0-36d1-d3c8-4d21deff3ff5" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.FunctionType.Caption" Value="Тип агрегирующей функции" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.FunctionType.DisplayValue" Value="0" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.IgnoreDisplayValues.Caption" Value="Не читать отображаемые значения колонок Справочников" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.NumberOfRecords.Caption" Value="Количество записей для чтения" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.NumberOfRecords.DisplayValue" Value="50" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.OrderInfo.Caption" Value="Порядок сортировки колонок" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.OrderInfo.DisplayValue" Value="UsrNumber:1:1" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ReadSomeTopRecords.Caption" Value="Читать первые" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ReadSomeTopRecords.DisplayValue" Value="true" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultCompositeObjectList.Caption" Value="Коллекция записей" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultCount.Caption" Value="Количество записей" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultDateTimeFunction.Caption" Value="Результат функции (Дата/Время)" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultEntity.Caption" Value="Первый элемент результирующей коллекции" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultEntityCollection.Caption" Value="Результирующая коллекция" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultFloatFunction.Caption" Value="Результат функции (Дробное число)" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultIntegerFunction.Caption" Value="Результат функции (Целое)" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultRowsCount.Caption" Value="Количество прочитанных записей" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultType.Caption" Value="Тип результата" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultType.DisplayValue" Value="0" />
+			<Item Name="BaseElements.ScriptTaskVIN.Caption" Value="Заполнить по VIN" />
+			<Item Name="Caption" Value="UsrFillOrderByVINProcess" />
+			<Item Name="LaneSets.LaneSet1.Caption" Value="LaneSet 1" />
+			<Item Name="LaneSets.LaneSet1.Lanes.Lane1.Caption" Value="Lane 1" />
+			<Item Name="NotificationCaption.Caption" Value="Заголовок экземпляра процесса" />
+			<Item Name="NotificationCaption.DisplayValue" Value="[#Название процесса#]" />
+			<Item Name="Parameters.ProcessSchemaParameter1.Caption" Value="UsrVIN" />
+			<Item Name="Parameters.ProcessSchemaParameter1.Sys_Description" Value="VIN, прочитанный из заказ‑наряда" />
+			<Item Name="Parameters.ProcessSchemaParameterBrand.Caption" Value="UsrBrand" />
+			<Item Name="Parameters.ProcessSchemaParameterErrorMessage.Caption" Value="UsrErrorMessage" />
+			<Item Name="Parameters.ProcessSchemaParameterErrorMessage.Sys_Description" Value="Сообщение об ошибке" />
+			<Item Name="Parameters.ProcessSchemaParameterModel.Caption" Value="UsrModel" />
+			<Item Name="Parameters.ProcessSchemaParameterOrderID.Caption" Value="UsrOrderID" />
+			<Item Name="Parameters.ProcessSchemaParameterOrderID.Sys_Description" Value="Из кнопки передаётся Id заказ‑наряда" />
+			<Item Name="Parameters.ProcessSchemaParameterYear.Caption" Value="UsrYear" />
+			<Item Name="Parameters.ResultMessage.Caption" Value="ResultMessage" />
+		</Items>
+	</Group>
+</Resources>

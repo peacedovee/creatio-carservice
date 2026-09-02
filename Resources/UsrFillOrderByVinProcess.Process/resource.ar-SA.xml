@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ar-SA">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.AggregationColumnName.Caption" Value="اسم عمود الدالة الوظيفية" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.CanReadUncommitedData.Caption" Value="قراءة البيانات غير الملتزم بها" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ConsiderTimeInFilter.Caption" Value="مراعاة الوقت في الفلتر" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.DataSourceFilters.Caption" Value="مصدر بيانات الفلاتر" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.EntityColumnMetaPathes.Caption" Value="أعمدة للقراءة" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.FunctionType.Caption" Value="نوع الدالة التجميعية" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.IgnoreDisplayValues.Caption" Value="يرجى عدم قراءة القيم المعروضة لأعمدة البحث" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.NumberOfRecords.Caption" Value="عدد السجلات لقراءة" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.OrderInfo.Caption" Value="ترتيب الأعمدة" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ReadSomeTopRecords.Caption" Value="اقرأ أولا" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultCompositeObjectList.Caption" Value="مجموعة السجلات" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultCount.Caption" Value="عدد السجلات" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultDateTimeFunction.Caption" Value="Function result (Date/Time)" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultEntity.Caption" Value="العنصر الأول لناتج المجموعة" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultEntityCollection.Caption" Value="المجموعة الناتجة" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultFloatFunction.Caption" Value="Function result (Decimal)" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultIntegerFunction.Caption" Value="Function result (Integer)" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultRowsCount.Caption" Value="عدد سجلات القراءة" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultType.Caption" Value="نوع النتيجة" />
+			<Item Name="Caption" Value="UsrFillOrderByVINProcess" />
+		</Items>
+	</Group>
+</Resources>

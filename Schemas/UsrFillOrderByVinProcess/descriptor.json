@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "2ad39a5c-2c46-4332-aac6-acc6803c35fc",
+    "Name": "UsrFillOrderByVINProcess",
+    "ModifiedOnUtc": "\/Date(1788344563000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "UsrFillOrderByVINProcess",
+    "DependsOn": []
+  }
+}

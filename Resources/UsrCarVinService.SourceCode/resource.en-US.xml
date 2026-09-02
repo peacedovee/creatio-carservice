@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="UsrCarVINService" />
+			<Item Name="LocalizableStrings.ErrorService.Value" Value="Error while executing the service." />
+			<Item Name="LocalizableStrings.OrderNotFound.Value" Value="Please save the order." />
+			<Item Name="LocalizableStrings.SuccessfullyData.Value" Value="The VIN data has been successfully updated." />
+			<Item Name="LocalizableStrings.UnavailableService.Value" Value="The external service is unavailable." />
+			<Item Name="LocalizableStrings.VINNotFilled.Value" Value="The VIN is not filled in." />
+			<Item Name="LocalizableStrings.VINNotRecognized.Value" Value="VIN is not recognized." />
+		</Items>
+	</Group>
+</Resources>

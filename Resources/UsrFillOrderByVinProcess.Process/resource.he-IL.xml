@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="he-IL">
+	<Group Type="String">
+		<Items>
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.AggregationColumnName.Caption" Value="שם עמודת פונקציית אגרגציה" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.CanReadUncommitedData.Caption" Value="קרא נתונים שלא אושרו" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ConsiderTimeInFilter.Caption" Value="שקול זמן במסנן" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.DataSourceFilters.Caption" Value="מקור נתונים של פילטרים" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.EntityColumnMetaPathes.Caption" Value="עמודות לקרוא" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.FunctionType.Caption" Value="סוג פונקציה מצטברת" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.IgnoreDisplayValues.Caption" Value="אל תקרא ערכים המוצגים של עמודות חיפוש" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.NumberOfRecords.Caption" Value="מספר רשומות לקריאה" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.OrderInfo.Caption" Value="סדר עמודות" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ReadSomeTopRecords.Caption" Value="קרא ראשון" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultCompositeObjectList.Caption" Value="אוסף רשומות" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultCount.Caption" Value="מספר רשומות" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultDateTimeFunction.Caption" Value="Function result (Date/Time)" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultEntity.Caption" Value="הפריט הראשון של האוסף התוצאו" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultEntityCollection.Caption" Value="אוסף תוצאות" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultFloatFunction.Caption" Value="Function result (Decimal)" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultIntegerFunction.Caption" Value="Function result (Integer)" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultRowsCount.Caption" Value="מספר הרשומות שנקראו" />
+			<Item Name="BaseElements.ReadDataUserTaskForVIN.Parameters.ResultType.Caption" Value="Result type" />
+			<Item Name="Caption" Value="UsrFillOrderByVINProcess" />
+		</Items>
+	</Group>
+</Resources>

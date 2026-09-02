@@ -3,8 +3,21 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Страница редактирования: &quot;Заказ-наряды&quot;" />
+			<Item Name="LocalizableStrings.ExternalServiceError.Value" Value="External service unavailable." />
+			<Item Name="LocalizableStrings.FillByVinButtonCaption.Value" Value="Fill by VIN" />
+			<Item Name="LocalizableStrings.OrderNotFound.Value" Value="Order not found." />
+			<Item Name="LocalizableStrings.OrderNotSaved.Value" Value="The order has not been saved yet." />
+			<Item Name="LocalizableStrings.OrderNotSavedError.Value" Value="The recording could not be saved." />
+			<Item Name="LocalizableStrings.SaveError.Value" Value="Save error." />
+			<Item Name="LocalizableStrings.SaveOrder.Value" Value="First, save the order." />
+			<Item Name="LocalizableStrings.ServiceError.Value" Value="Service execution error." />
+			<Item Name="LocalizableStrings.SuccessfullyVIN.Value" Value="The VIN data has been successfully updated." />
 			<Item Name="LocalizableStrings.TabRepairWorksTabCaption.Value" Value="Work" />
+			<Item Name="LocalizableStrings.UpdatedData.Value" Value="The VIN data has been updated." />
 			<Item Name="LocalizableStrings.UsrRepairWorkDetailDetailCaptionOnPage.Value" Value="Repair work" />
+			<Item Name="LocalizableStrings.VinEmpty.Value" Value="VIN is empty." />
+			<Item Name="LocalizableStrings.VinNotRecognized.Value" Value="VIN not recognized." />
+			<Item Name="LocalizableStrings.VinUpdated.Value" Value="VIN data updated successfully." />
 		</Items>
 	</Group>
 </Resources>

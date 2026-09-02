@@ -3,8 +3,21 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Страница редактирования: &quot;Заказ-наряды&quot;" />
+			<Item Name="LocalizableStrings.ExternalServiceError.Value" Value="Внешний сервис недоступен." />
+			<Item Name="LocalizableStrings.FillByVinButtonCaption.Value" Value="Заполнить по VIN" />
+			<Item Name="LocalizableStrings.OrderNotFound.Value" Value="Заказ-наряд не найден." />
+			<Item Name="LocalizableStrings.OrderNotSaved.Value" Value="Заказ-наряд ещё не сохранён." />
+			<Item Name="LocalizableStrings.OrderNotSavedError.Value" Value="Не удалось сохранить запись." />
+			<Item Name="LocalizableStrings.SaveError.Value" Value="Ошибка сохранения." />
+			<Item Name="LocalizableStrings.SaveOrder.Value" Value="Сначала сохраните заказ-наряд." />
+			<Item Name="LocalizableStrings.ServiceError.Value" Value="Ошибка при выполнении сервиса." />
+			<Item Name="LocalizableStrings.SuccessfullyVIN.Value" Value="Данные по VIN успешно обновлены." />
 			<Item Name="LocalizableStrings.TabRepairWorksTabCaption.Value" Value="Работы" />
+			<Item Name="LocalizableStrings.UpdatedData.Value" Value="Данные по VIN обновлены." />
 			<Item Name="LocalizableStrings.UsrRepairWorkDetailDetailCaptionOnPage.Value" Value="Ремонтные работы" />
+			<Item Name="LocalizableStrings.VinEmpty.Value" Value="VIN не заполнен." />
+			<Item Name="LocalizableStrings.VinNotRecognized.Value" Value="VIN не распознан." />
+			<Item Name="LocalizableStrings.VinUpdated.Value" Value="Данные по VIN успешно обновлены." />
 		</Items>
 	</Group>
 </Resources>
