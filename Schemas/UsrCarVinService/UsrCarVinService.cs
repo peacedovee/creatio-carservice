@@ -215,5 +215,54 @@ namespace Terrasoft.UsrCarService
 			        return null;
 			    }
 			}
+
+		[OperationContract]
+		[WebInvoke(
+		    Method = "POST",
+		    BodyStyle = WebMessageBodyStyle.Wrapped,
+		    RequestFormat = WebMessageFormat.Json,
+		    ResponseFormat = WebMessageFormat.Json)]
+		public decimal GetOrderHoursByNumber(string orderNumber)
+		{
+		    try
+		    {
+		        var uc = CurrentUserConnection;
+		
+		        // Ищем заказ-наряд по номеру
+		        var esqOrder = new EntitySchemaQuery(uc.EntitySchemaManager, "UsrOrder");
+		        esqOrder.PrimaryQueryColumn.IsAlwaysSelect = true;
+		        esqOrder.AddColumn("Id");
+		        esqOrder.Filters.Add(esqOrder.CreateFilterWithParameters(
+		            FilterComparisonType.Equal, "UsrNumber", orderNumber));
+		
+		        var orders = esqOrder.GetEntityCollection(uc);
+		        if (orders.Count == 0)
+		        {
+		            return -1; // заказ не найден
+		        }
+		
+		        var orderId = orders[0].GetTypedColumnValue<Guid>("Id");
+		
+		        // Суммируем нормо-часы по работам
+		        var esqWork = new EntitySchemaQuery(uc.EntitySchemaManager, "UsrOrderWork");
+		        esqWork.AddColumn("UsrHours");
+		        esqWork.Filters.Add(esqWork.CreateFilterWithParameters(
+		            FilterComparisonType.Equal, "UsrOrderId", orderId));
+		
+		        var works = esqWork.GetEntityCollection(uc);
+		
+		        decimal total = 0m;
+		        foreach (var work in works)
+		        {
+		            total += work.GetTypedColumnValue<decimal>("UsrHours");
+		        }
+		
+		        return Convert.ToDecimal(total);
+		    }
+		    catch
+		    {
+		        return -1;
+		    }
+		}
     }
 }
