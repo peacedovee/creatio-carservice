@@ -110,6 +110,9 @@ define("UsrOrder1Page", ["ProcessModuleUtilities", "RightUtilities"], function(P
 			                }
 			
 			                var newId = this.get("Id");
+							this.set("UsrBrand", "");
+							this.set("UsrModel", "");
+							this.set("UsrYear", "");
 			
 			                ProcessModuleUtilities.executeProcess({
 			                    sysProcessName: "UsrFillOrderByVINProcess",

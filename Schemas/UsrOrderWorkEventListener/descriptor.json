@@ -2,7 +2,7 @@
   "Descriptor": {
     "UId": "aa2daf34-89f8-43f8-942f-4dac9b9a800a",
     "Name": "UsrOrderWorkEventListener",
-    "ModifiedOnUtc": "\/Date(1788257387000)\/",
+    "ModifiedOnUtc": "\/Date(1788438539000)\/",
     "ManagerName": "SourceCodeSchemaManager",
     "Caption": "Слушатель событий для UsrOrderWork"
   }

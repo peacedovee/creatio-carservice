@@ -46,9 +46,10 @@ namespace Terrasoft.Configuration
             if (total > Convert.ToDecimal(maxHours))
             {
                 e.IsCanceled = true;
-                throw new Exception(string.Format(
-                    new LocalizableString("UsrOrderWorkEventListener", "HoursValidationMessage").ToString(),
-                    maxHours));
+				throw new Exception($"В заказ-наряде допускается не более {maxHours} нормо-часов.");
+                //throw new Exception(string.Format(
+                    //new LocalizableString("UsrOrderWorkEventListener", "HoursValidationMessage").ToString(),
+                    //maxHours));
             }
         }
     }
