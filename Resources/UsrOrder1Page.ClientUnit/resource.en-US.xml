@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Страница редактирования: &quot;Заказ-наряды&quot;" />
+			<Item Name="LocalizableStrings.AccessDenied.Value" Value="You do not have rights to fill by VIN" />
 			<Item Name="LocalizableStrings.ExternalServiceError.Value" Value="External service unavailable." />
 			<Item Name="LocalizableStrings.FillByVinButtonCaption.Value" Value="Fill by VIN" />
 			<Item Name="LocalizableStrings.OrderNotFound.Value" Value="Order not found." />

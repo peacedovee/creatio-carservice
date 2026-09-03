@@ -63,6 +63,14 @@ namespace Terrasoft.UsrCarService
 			        log.Info($"FillOrderByVIN started. OrderId = {orderId}");
 			
 			        var uc = CurrentUserConnection;
+					bool canExecute = uc.DBSecurityEngine.GetCanExecuteOperation("CanFillOrderByVIN");
+					if (!canExecute)
+					{
+					    result.Success = false;
+					    result.Message = "AccessDenied";
+					    log.Warn($"User {uc.CurrentUser.Name} has no rights for operation CanFillOrderByVIN");
+					    return result;
+					}
 			
 			        // 1. Читаем заказ-наряд
 			        var esq = new EntitySchemaQuery(uc.EntitySchemaManager, "UsrOrder");

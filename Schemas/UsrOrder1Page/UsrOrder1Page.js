@@ -1,4 +1,4 @@
-define("UsrOrder1Page", ["ProcessModuleUtilities"], function(ProcessModuleUtilities) {
+define("UsrOrder1Page", ["ProcessModuleUtilities", "RightUtilities"], function(ProcessModuleUtilities, RightUtilities) {
 	return {
 		entitySchemaName: "UsrOrder",
 		attributes: {
@@ -29,6 +29,11 @@ define("UsrOrder1Page", ["ProcessModuleUtilities"], function(ProcessModuleUtilit
 					    }
 					]
 		        }
+			},
+			"CanFillByVin": {
+			    dataValueType: Terrasoft.DataValueType.BOOLEAN,
+			    type: Terrasoft.ViewModelColumnType.VIRTUAL_COLUMN,
+			    value: false
 			}
 		},
 		modules: /**SCHEMA_MODULES*/{}/**SCHEMA_MODULES*/,
@@ -55,6 +60,14 @@ define("UsrOrder1Page", ["ProcessModuleUtilities"], function(ProcessModuleUtilit
 			init: function() {
 			    this.callParent(arguments);
 			    Terrasoft.ServerChannel.on(Terrasoft.EventName.ON_MESSAGE, this.onServerMessage, this);
+				this.checkCanFillByVin();
+			},
+			checkCanFillByVin: function() {
+			    RightUtilities.checkCanExecuteOperation({
+				    operation: "CanFillOrderByVIN"
+				}, function(result) {
+				    this.set("CanFillByVin", result);
+				}, this);
 			},
 			onServerMessage: function(scope, message) {
 			    if (!message || message.Header.Sender !== "VinProcessResult") {
@@ -349,7 +362,8 @@ define("UsrOrder1Page", ["ProcessModuleUtilities"], function(ProcessModuleUtilit
 						"column": 12,
 						"row": 3,
 						"layoutName": "Header"
-					}
+					},
+					"visible": { "bindTo": "CanFillByVin" }
 				},
 				"parentName": "Header",
 				"propertyName": "items",
